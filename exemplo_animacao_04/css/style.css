@@ -1,0 +1,75 @@
+body {
+    background-color: #494747; /* Cor de fundo do corpo */
+    height: 100vh; /* Define a altura como 100% da altura */
+    display: flex; /* Usa o modelo flexbox para posicionar elementos */
+    align-items: center; /* Centraliza verticalmente */
+    font-family: sans-serif; 
+}
+
+.container {
+    height: 400px; /* Altura do container */
+    width: 900px; /* Largura do container */
+    margin: 0 auto; /* Centraliza horizontalmente no espaço disponível */
+    overflow: hidden; /* Oculta o conteúdo que estourar as bordas do contêiner */
+    border-radius: 20px; /* Define o raio das bordas para criar cantos arredondados */
+    position: relative; /* Permite posicionar elementos filhos relativos a este contêiner */
+    display: grid; /* Usa o modelo grid para organizar elementos filhos */
+    grid-template-columns: repeat(5, 1fr); /* Define o layout das colunas (5 colunas igualmente espaçadas) */
+    grid-template-rows: repeat(2, 1fr); /* Define o layout das linhas (2 linhas igualmente espaçadas) */
+}
+
+/* Estilo dos quadrados de fundo (quadroFundo) */
+.quadroFundo {
+    display: flex; /* Usa o modelo flexbox para posicionar elementos */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    justify-content: center; /* Centraliza horizontalmente os elementos */
+    color: #f3f3f3; /* Cor do texto dentro dos quadrados de fundo */
+}
+
+/* Estilos específicos para cada tipo de quadrado de fundo */
+.quadroFundo:nth-of-type(1) {
+    background-color: #009CE9;
+}
+
+.quadroFundo:nth-of-type(2) {
+    background-color: #00BEDB;
+}
+
+.quadroFundo:nth-of-type(3) {
+    background-color: #00D2D9;
+}
+
+.quadroFundo:nth-of-type(4) {
+    background-color: #16E6B2;
+}
+
+.quadroFundo:nth-of-type(5) {
+    background-color: #9EF389;
+}
+
+.quadroFundo:nth-of-type(6) {
+    background-color: #f1909d;
+}
+
+.quadroFundo:nth-of-type(7) {
+    background-color: #ff405a;
+}
+
+.quadroFundo:nth-of-type(8) {
+    background-color: #f91634;
+}
+
+.quadroFundo:nth-of-type(9) {
+    background-color: #d61932;
+}
+
+.quadroFundo:nth-of-type(10) {
+    background-color: #b0081e;
+}
+
+/* Estilo para as letras (letra) */
+.letra {
+    font-size: 70px; /* Tamanho da fonte das letras */
+    font-weight: 200; /* Peso da fonte (quão negrito) */
+    text-transform: uppercase; /* Transforma o texto em letras maiúsculas */
+}
