@@ -1,5 +1,5 @@
 // Constante para a conversão de graus para radianos
-const RAIO = Math.PI / 180;
+const RAIO = Math.PI / 75;
 
 // Converte graus para radianos.
 function paraRadianos(graus) {
@@ -51,8 +51,8 @@ let imagem = new Image();
 imagem.onload = function () {
   // Inicializa o ângulo de rotação
   var graus = 0;
-  // Calcula o tempo final para a rotação (3 segundos a partir de agora)
-  var fimTempoRotacao = Date.now() + 3000;
+  // Calcula o tempo final para a rotação (2.5 segundos a partir de agora)
+  var fimTempoRotacao = Date.now() + 2500;
   // Calcula o tempo final para o deslocamento (mais 4 segundos após a rotação)
   var fimTempoDeslocamento = fimTempoRotacao + 4000;
 
@@ -68,7 +68,7 @@ imagem.onload = function () {
     } else if (Date.now() < fimTempoDeslocamento) {
       // Fase de deslocamento: Calcula a posição atual com base no tempo
       var tempoAtual = Date.now();
-      var progresso = (tempoAtual - fimTempoRotacao) / 3000; // 3000 ms para o deslocamento
+      var progresso = (tempoAtual - fimTempoRotacao) / 2500; // 2500 ms para o deslocamento
       var xInicial = tela.width - imagem.width;
       var xFinal = 0;
       var xAtual = xInicial + (xFinal - xInicial) * progresso;
